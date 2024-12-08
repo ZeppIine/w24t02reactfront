@@ -1,0 +1,66 @@
+body {
+  background-image: url("https://res.17996cdn.net/gf2/tw/images/home/role-des-bg.png");
+}
+
+.header {
+  text-align: left;
+  margin: px;
+  padding: 20px;
+  background-color: #000000;
+}
+
+.doll-list {
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.doll-list-title {
+  padding: 10px;
+  font-size: 24px;
+  color: white;
+  text-align: left;
+}
+
+.doll-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.container {
+  position: relative;
+  width: 11%;
+}
+
+.logo-img {
+  width: 20%;
+}
+
+a {
+  color: white;
+}
+
+.doll-name {
+  position: absolute;
+  width: 100%;
+  bottom: 5px;
+  padding: 16px 0px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.doll-img {
+  width: 100%;
+}
+
+.doll-star {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 0px;
+  text-align: left;
+  color: yellow;
+  filter: drop-shadow(2px 2px 4px black);
+}
