@@ -4,7 +4,7 @@ import { FaStar } from "react-icons/fa";
 const Container = (props) => {
   const [specsExpanded, setSpecsExpanded] = useState(false);
 
-  const specsLyrics = () => {
+  const toggleSpecs = () => {
     setSpecsExpanded((prevState) => !prevState);
   };
 
@@ -15,7 +15,7 @@ const Container = (props) => {
           className="doll-img"
           src={props.doll.img}
           alt={`${props.doll.name} 이미지`}
-          onClick={specsLyrics}
+          onClick={toggleSpecs}
         />
         <a
           href={`https://www.youtube.com/results?search_query=소녀전선2%20${props.doll.name}`}
@@ -25,7 +25,7 @@ const Container = (props) => {
           <div className="doll-name">
             {props.doll.name}
             {specsExpanded && (
-              <pre onClick={specsLyrics}>
+              <pre onClick={toggleSpecs}>
                 {`${props.doll.class}(${props.doll.type})`}
               </pre>
             )}
